@@ -1,7 +1,7 @@
 ﻿namespace Cardano.Entities.Sync
 {
     /// <summary />
-    public abstract class SyncAbstract
+    public abstract class SyncBase
     {
         /// <summary />
         public ulong Quantity { get; set; }
