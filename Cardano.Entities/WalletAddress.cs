@@ -1,4 +1,4 @@
-﻿namespace Cardano.Abstractions.Models
+﻿namespace Cardano.Entities
 {
     /// <summary>
     /// Wallet Address

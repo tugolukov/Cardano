@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cardano.Abstractions.Models
+namespace Cardano.Entities
 {
     /// <summary>
     /// Batch Import Result
