@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <_UnmanagedRegistrationCache Remove="obj\Cardano.Core.csproj.UnmanagedRegistration.cache" />
+      <_UnmanagedRegistrationCache Remove="obj\Cardano.Abstractions.csproj.UnmanagedRegistration.cache" />
     </ItemGroup>
 
 </Project>
