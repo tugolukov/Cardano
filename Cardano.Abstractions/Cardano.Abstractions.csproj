@@ -8,4 +8,8 @@
       <_UnmanagedRegistrationCache Remove="obj\Cardano.Abstractions.csproj.UnmanagedRegistration.cache" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Cardano.Entities\Cardano.Entities.csproj" />
+    </ItemGroup>
+
 </Project>
