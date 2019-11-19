@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Cardano.Abstractions.Client;
+using Cardano.Abstractions.Models.Client;
 using Cardano.Entities;
 
 namespace Cardano.Abstractions.Services

@@ -1,4 +1,4 @@
-﻿namespace Cardano.Abstractions.Client
+﻿namespace Cardano.Abstractions.Models.Client
 {
     /// <summary>
     /// Метаданные
