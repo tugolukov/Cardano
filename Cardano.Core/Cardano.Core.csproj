@@ -8,4 +8,12 @@
       <_UnmanagedRegistrationCache Remove="obj\Cardano.Core.csproj.UnmanagedRegistration.cache" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Cardano.Abstractions\Cardano.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
 </Project>
