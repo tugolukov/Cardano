@@ -1,4 +1,5 @@
-﻿using Cardano.Abstractions.Models.Client;
+﻿using System.Threading.Tasks;
+using Cardano.Abstractions.Models.Client;
 using Cardano.Entities;
 using Cardano.Entities.Settings;
 
@@ -22,7 +23,7 @@ namespace Cardano.Abstractions.Services
         /// Apply the next available update proposal from the blockchain. Note that this will immediately shutdown 
         /// the node and makes it unavailable for a short while.
         /// </remarks>
-        void ApplyNextUpdate();
+        Task ApplyNextUpdate();
 
         /// <summary>
         /// Import a Wallet from disk.
@@ -30,13 +31,13 @@ namespace Cardano.Abstractions.Services
         /// <param name="filePath">The path to the .key file holding the backup.</param>
         /// <param name="spendingPassword">An optional spending password to set for the imported wallet.</param>
         /// <returns></returns>
-        Response<Wallet> ImportWallet(string filePath, string spendingPassword);
+        Task<Response<Wallet>> ImportWallet(string filePath, string spendingPassword);
 
         /// <summary>
         /// Version of the next update (404 if none)
         /// </summary>
         /// <returns></returns>
-        Response<SoftwareInfo> VersionOfTheNextUpdate();
+        Task<Response<SoftwareInfo>> VersionOfTheNextUpdate();
 
         /// <summary>
         /// Discard and postpone the next available update
@@ -45,7 +46,7 @@ namespace Cardano.Abstractions.Services
         /// Discard the next available update from the node's local state. Yet, this doesn't reject the update 
         /// which will still be applied as soon as the node is restarted.
         /// </remarks>
-        void DiscardAndPostpone();
+        Task DiscardAndPostpone();
 
         /// <summary>
         /// Clear wallet state and all associated secret keys
@@ -55,6 +56,6 @@ namespace Cardano.Abstractions.Services
         /// is during API integration testing. Note also that this will fail by default unless the node is running 
         /// in debug mode.
         /// </remarks>
-        void ClearWallet();
+        Task ClearWallet();
     }
 }
