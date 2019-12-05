@@ -1,4 +1,5 @@
-﻿using Cardano.Abstractions.Models.Client;
+﻿using System.Threading.Tasks;
+using Cardano.Abstractions.Models.Client;
 using Cardano.Entities.Settings;
 
 namespace Cardano.Abstractions.Services
@@ -12,6 +13,6 @@ namespace Cardano.Abstractions.Services
         /// Retrieves the static settings for this node.
         /// </summary>
         /// <returns>Settings for node</returns>
-        Response<NodeSettings> Get();
+        Task<Response<NodeSettings>> Get();
     }
 }
