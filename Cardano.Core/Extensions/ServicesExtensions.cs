@@ -16,6 +16,7 @@ namespace Cardano.Core.Extensions
             services.AddScoped<IInternalService, InternalService>();
             services.AddScoped<ISettingsService, SettingsService>();
             services.AddScoped<ITransactionsService, TransactionsService>();
+            services.AddScoped<IWalletsService, WalletsService>();
 
             return services;
         }

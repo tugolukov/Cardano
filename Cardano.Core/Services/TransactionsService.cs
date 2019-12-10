@@ -8,7 +8,6 @@ using Cardano.Abstractions.Models.Contexts;
 using Cardano.Abstractions.Models.Requests;
 using Cardano.Abstractions.Services;
 using Cardano.Entities;
-using Cardano.Entities.Transactions;
 using Cardano.Utils.HttpClient.Extensions;
 
 namespace Cardano.Core.Services
