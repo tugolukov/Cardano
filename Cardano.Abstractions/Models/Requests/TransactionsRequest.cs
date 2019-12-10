@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using Cardano.Entities.Transactions;
 
-namespace Cardano.Entities.Transactions
+namespace Cardano.Abstractions.Models.Requests
 {
     /// <summary>
     /// Request body for transactions service

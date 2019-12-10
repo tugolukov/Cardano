@@ -1,6 +1,6 @@
 ﻿using Cardano.Entities.Sync;
 
-namespace Cardano.Entities
+namespace Cardano.Entities.Wallets
 {
     /// <summary>
     /// Wallet Model

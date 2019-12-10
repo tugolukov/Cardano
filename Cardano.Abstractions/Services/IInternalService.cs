@@ -2,6 +2,7 @@
 using Cardano.Abstractions.Models.Client;
 using Cardano.Entities;
 using Cardano.Entities.Settings;
+using Cardano.Entities.Wallets;
 
 namespace Cardano.Abstractions.Services
 {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Cardano.Entities.Transactions
+namespace Cardano.Abstractions.Models.Requests
 {
     /// <summary>
     /// Request body for redeem a certificate

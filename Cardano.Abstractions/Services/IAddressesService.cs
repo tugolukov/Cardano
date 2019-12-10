@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Cardano.Abstractions.Models.Client;
 using Cardano.Abstractions.Models.Contexts;
 using Cardano.Entities;
+using Cardano.Entities.Wallets;
 
 namespace Cardano.Abstractions.Services
 {

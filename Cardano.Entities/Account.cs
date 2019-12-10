@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Cardano.Entities.Wallets;
 
 namespace Cardano.Entities
 {

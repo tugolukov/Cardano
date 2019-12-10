@@ -6,6 +6,7 @@ using Cardano.Abstractions.Models.Client;
 using Cardano.Abstractions.Services;
 using Cardano.Entities;
 using Cardano.Entities.Settings;
+using Cardano.Entities.Wallets;
 using Cardano.Utils.HttpClient.Extensions;
 
 namespace Cardano.Core.Services
