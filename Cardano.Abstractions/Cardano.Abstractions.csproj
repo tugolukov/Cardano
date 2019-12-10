@@ -5,11 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <_UnmanagedRegistrationCache Remove="obj\Cardano.Abstractions.csproj.UnmanagedRegistration.cache" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Cardano.Entities\Cardano.Entities.csproj" />
+      <ProjectReference Include="..\Cardano.Utils\Cardano.Utils.csproj" />
     </ItemGroup>
 
 </Project>

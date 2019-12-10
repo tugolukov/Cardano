@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 using Cardano.Abstractions.Models;
 using Cardano.Abstractions.Models.Client;
 using Cardano.Abstractions.Services;
-using Cardano.Core.Extensions;
 using Cardano.Entities.Node;
+using Cardano.Utils.HttpClient.Extensions;
 
 namespace Cardano.Core.Services
 {

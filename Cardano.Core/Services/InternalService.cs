@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using Cardano.Abstractions.Models;
 using Cardano.Abstractions.Models.Client;
 using Cardano.Abstractions.Services;
-using Cardano.Core.Extensions;
 using Cardano.Entities;
 using Cardano.Entities.Settings;
+using Cardano.Utils.HttpClient.Extensions;
 
 namespace Cardano.Core.Services
 {

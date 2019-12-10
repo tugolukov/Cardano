@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Cardano.Core.Utils;
 using Newtonsoft.Json;
 
-namespace Cardano.Core.Extensions
+namespace Cardano.Utils.HttpClient.Extensions
 {
     /// <summary>
     /// Методы расширения для HttpClient
@@ -17,7 +17,7 @@ namespace Cardano.Core.Extensions
         /// <param name="requestUri">Адрес назначения</param>
         /// <typeparam name="T">Тип возвращаемого значения</typeparam>
         /// <returns></returns>
-        public static async Task<T> GetAsync<T>(this HttpClient client, string requestUri)
+        public static async Task<T> GetAsync<T>(this System.Net.Http.HttpClient client, string requestUri)
         {
             using (client)
             {
@@ -34,7 +34,7 @@ namespace Cardano.Core.Extensions
         /// <param name="body">Передаваемый объект</param>
         /// <typeparam name="T">Тип возвращаемого значения</typeparam>
         /// <returns></returns>
-        public static async Task<T> PostAsync<T>(this HttpClient client, string requestUri, object body)
+        public static async Task<T> PostAsync<T>(this System.Net.Http.HttpClient client, string requestUri, object body)
         {
             using (client)
             {
@@ -53,7 +53,7 @@ namespace Cardano.Core.Extensions
         /// <param name="body">Передаваемый объект</param>
         /// <typeparam name="T">Тип возвращаемого значения</typeparam>
         /// <returns></returns>
-        public static async Task<T> PutAsync<T>(this HttpClient client, string requestUri, object body)
+        public static async Task<T> PutAsync<T>(this System.Net.Http.HttpClient client, string requestUri, object body)
         {
             var jsonContent = new JsonContent(body);
 
@@ -67,7 +67,7 @@ namespace Cardano.Core.Extensions
         /// <param name="client">HttpCLient</param>
         /// <param name="requestUri">Адрес назначения</param>
         /// <returns></returns>
-        public static async Task DeleteVoidAsync(this HttpClient client, string requestUri)
+        public static async Task DeleteVoidAsync(this System.Net.Http.HttpClient client, string requestUri)
         {
             using (client)
             {

@@ -6,9 +6,9 @@ using Cardano.Abstractions.Models;
 using Cardano.Abstractions.Models.Client;
 using Cardano.Abstractions.Models.Contexts;
 using Cardano.Abstractions.Services;
-using Cardano.Core.Extensions;
 using Cardano.Entities;
 using Cardano.Entities.Transactions;
+using Cardano.Utils.HttpClient.Extensions;
 
 namespace Cardano.Core.Services
 {
