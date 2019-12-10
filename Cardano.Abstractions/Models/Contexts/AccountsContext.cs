@@ -1,3 +1,5 @@
+using Cardano.Utils.HttpClient.Models;
+
 namespace Cardano.Abstractions.Models.Contexts
 {
     /// <summary>
@@ -8,6 +10,7 @@ namespace Cardano.Abstractions.Models.Contexts
         /// <summary>
         /// Account Identifier
         /// </summary>
-        public string AccountId { get; set; } = "";
+        [Query("account_id")]
+        public string AccountId { get; set; } = null;
     }
 }

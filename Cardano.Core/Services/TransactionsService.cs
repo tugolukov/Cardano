@@ -27,12 +27,7 @@ namespace Cardano.Core.Services
         /// <inheritdoc />
         public async Task<Response<List<Transaction>>> RetrievesHistory(TransactionsContext context) =>
             await _client.GetAsync<Response<List<Transaction>>>(
-                "/api/v1/transactions" +
-                $"?wallet_id={context.WalletId}" +
-                $"?account_index={context.AccountIndex}" +
-                $"?address={context.Address}" +
-                $"?page={context.Page}" +
-                $"?per_page={context.PerPage}");
+                "/api/v1/transactions", context);
 
         /// <inheritdoc />
         public async Task<Response<Transaction>> GeneratesTransaction(TransactionsRequest body) =>

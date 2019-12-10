@@ -1,3 +1,5 @@
+using Cardano.Utils.HttpClient.Models;
+
 namespace Cardano.Abstractions.Models.Contexts
 {
     /// <summary>
@@ -8,11 +10,13 @@ namespace Cardano.Abstractions.Models.Contexts
         /// <summary>
         /// Wallet Identifier. Not used there
         /// </summary>
-        public override string WalletId { get; set; } = string.Empty;
+        [Query("wallet_id")]
+        public override string WalletId { get; set; } = null;
         
         /// <summary>
         /// Address
         /// </summary>
+        [Query("address")]
         public string Address { get; set; }
     }
 }

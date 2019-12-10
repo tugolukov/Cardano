@@ -26,7 +26,7 @@ namespace Cardano.Core.Services
 
         /// <inheritdoc />
         public async Task<Response<List<Wallet>>> GetAll(WalletsContext context) =>
-            await _client.GetAsync<Response<List<Wallet>>>("/api/v1/wallets");
+            await _client.GetAsync<Response<List<Wallet>>>("/api/v1/wallets", context);
 
         /// <inheritdoc />
         public async Task<Response<Wallet>> Create(WalletsRequest body) =>

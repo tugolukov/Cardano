@@ -26,7 +26,7 @@ namespace Cardano.Core.Services
 
         /// <inheritdoc />
         public async Task<Response<List<WalletAddress>>> GetAll(AddressesContext context) =>
-            await _client.GetAsync<Response<List<WalletAddress>>>($"/api/v1/addresses?page={context.Page}?per_page={context.PerPage}");
+            await _client.GetAsync<Response<List<WalletAddress>>>($"/api/v1/addresses", context);
 
         /// <inheritdoc />
         public async Task<Response<WalletAddress>> Create(ulong accountIndex, string walletId,
