@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardano.Abstractions", "Car
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardano.Entities", "Cardano.Entities\Cardano.Entities.csproj", "{486D4E58-BB81-4DA9-AD43-182C311163F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cardano.Utils", "Cardano.Utils\Cardano.Utils.csproj", "{C210422C-FEBD-44F5-AD11-BCA08E26D7F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{486D4E58-BB81-4DA9-AD43-182C311163F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486D4E58-BB81-4DA9-AD43-182C311163F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486D4E58-BB81-4DA9-AD43-182C311163F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C210422C-FEBD-44F5-AD11-BCA08E26D7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C210422C-FEBD-44F5-AD11-BCA08E26D7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C210422C-FEBD-44F5-AD11-BCA08E26D7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C210422C-FEBD-44F5-AD11-BCA08E26D7F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

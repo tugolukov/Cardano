@@ -5,7 +5,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <_UnmanagedRegistrationCache Remove="obj\Cardano.Core.csproj.UnmanagedRegistration.cache" />
+      <ProjectReference Include="..\Cardano.Abstractions\Cardano.Abstractions.csproj" />
+      <ProjectReference Include="..\Cardano.Utils\Cardano.Utils.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     </ItemGroup>
 
 </Project>
