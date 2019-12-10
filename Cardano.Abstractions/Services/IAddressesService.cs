@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Cardano.Abstractions.Models.Client;
+using Cardano.Abstractions.Models.Contexts;
 using Cardano.Entities;
 
 namespace Cardano.Abstractions.Services
@@ -13,12 +14,9 @@ namespace Cardano.Abstractions.Services
         /// <summary>
         /// Returns a list of the addresses.
         /// </summary>
-        /// <param name="page">The page number to fetch for this request. The minimum is 1. If nothing is specified,
-        ///     this value defaults to 1 and always shows the first entries in the requested collection.</param>
-        /// <param name="perPage">The number of entries to display for each page. The minimum is 1,
-        ///     whereas the maximum is 50. If nothing is specified, this value defaults to 10.</param>
+        /// <param name="context"></param>
         /// <returns></returns>
-        Task<Response<List<WalletAddress>>> GetAll(int page = 1, int perPage = 10);
+        Task<Response<List<WalletAddress>>> GetAll(AddressesContext context);
 
         /// <summary>
         /// Creates a new Address.
@@ -41,9 +39,9 @@ namespace Cardano.Abstractions.Services
         /// To reflect this, the V1 endpoint does not fail when an address is not recognised and returns
         /// a new field which indicates the address' ownership status, from the node point of view.
         /// </remarks>
-        /// <param name="address"></param>
+        /// <param name="context"></param>
         /// <returns></returns>
-        Task<Response<WalletAddress>> Get(string address);
+        Task<Response<WalletAddress>> Get(AddressesContext context);
 
         /// <summary>
         /// Batch import existing addresses

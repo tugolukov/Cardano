@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Cardano.Abstractions.Models;
 using Cardano.Abstractions.Models.Client;
+using Cardano.Abstractions.Models.Contexts;
 using Cardano.Abstractions.Services;
 using Cardano.Core.Extensions;
 using Cardano.Entities;
@@ -23,7 +24,7 @@ namespace Cardano.Core.Services
         }
 
         /// <inheritdoc />
-        public async Task<Response<List<Account>>> GetAll(RetrievesContext context) =>
+        public async Task<Response<List<Account>>> GetAll(AccountsContext context) =>
             await _client.GetAsync<Response<List<Account>>>($"/api/v1/wallets/{context.WalletId}/accounts");
 
         /// <inheritdoc />
@@ -35,11 +36,11 @@ namespace Cardano.Core.Services
             });
 
         /// <inheritdoc />
-        public async Task Delete(string walletId, string accountId) =>
-            await _client.DeleteVoidAsync($"/api/v1/wallets/{walletId}/accounts/{accountId}");
+        public async Task Delete(AccountsContext context) =>
+            await _client.DeleteVoidAsync($"/api/v1/wallets/{context.WalletId}/accounts/{context.AccountId}");
 
         /// <inheritdoc />
-        public async Task<Response<Account>> Get(RetrievesContext context) =>
+        public async Task<Response<Account>> Get(AccountsContext context) =>
             await _client.GetAsync<Response<Account>>(
                 $"/api/v1/wallets/{context.WalletId}/accounts/{context.AccountId}");
 
@@ -52,13 +53,13 @@ namespace Cardano.Core.Services
                 });
 
         /// <inheritdoc />
-        public async Task<Response<List<WalletAddress>>> GetAddresses(RetrievesContext context) =>
+        public async Task<Response<List<WalletAddress>>> GetAddresses(AccountsContext context) =>
             await _client.GetAsync<Response<List<WalletAddress>>>(
                 $"/api/v1/wallets/{context.WalletId}/accounts/{context.AccountId}/addresses");
 
 
         /// <inheritdoc />
-        public async Task<Response<ulong>> GetBalance(RetrievesContext context) =>
+        public async Task<Response<ulong>> GetBalance(AccountsContext context) =>
             await _client.GetAsync<Response<ulong>>(
                 $"/api/v1/wallets/{context.WalletId}/accounts/{context.AccountId}/amount");
     }

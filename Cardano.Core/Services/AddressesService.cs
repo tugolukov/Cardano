@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Cardano.Abstractions.Models;
 using Cardano.Abstractions.Models.Client;
+using Cardano.Abstractions.Models.Contexts;
 using Cardano.Abstractions.Services;
 using Cardano.Core.Extensions;
 using Cardano.Entities;
@@ -23,8 +24,8 @@ namespace Cardano.Core.Services
         }
 
         /// <inheritdoc />
-        public async Task<Response<List<WalletAddress>>> GetAll(int page = 1, int perPage = 10) =>
-            await _client.GetAsync<Response<List<WalletAddress>>>($"/api/v1/addresses?page={page}?per_page={perPage}");
+        public async Task<Response<List<WalletAddress>>> GetAll(AddressesContext context) =>
+            await _client.GetAsync<Response<List<WalletAddress>>>($"/api/v1/addresses?page={context.Page}?per_page={context.PerPage}");
 
         /// <inheritdoc />
         public async Task<Response<WalletAddress>> Create(ulong accountIndex, string walletId,
@@ -37,8 +38,8 @@ namespace Cardano.Core.Services
             });
 
         /// <inheritdoc />
-        public async Task<Response<WalletAddress>> Get(string address) =>
-            await _client.GetAsync<Response<WalletAddress>>($"/api/v1/addresses/{address}");
+        public async Task<Response<WalletAddress>> Get(AddressesContext context) =>
+            await _client.GetAsync<Response<WalletAddress>>($"/api/v1/addresses/{context.Address}");
 
         /// <inheritdoc />
         public async Task<Response<BatchImportResult>> Import(string walletId, List<string> addresses) =>

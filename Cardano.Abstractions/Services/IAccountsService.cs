@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Cardano.Abstractions.Models;
 using Cardano.Abstractions.Models.Client;
+using Cardano.Abstractions.Models.Contexts;
 using Cardano.Entities;
 
 namespace Cardano.Abstractions.Services
@@ -16,7 +17,7 @@ namespace Cardano.Abstractions.Services
         /// </summary>
         /// <param name="context">Context for retrieves</param>
         /// <returns>Full list of Accounts</returns>
-        Task<Response<List<Account>>> GetAll(RetrievesContext context);
+        Task<Response<List<Account>>> GetAll(AccountsContext context);
 
         /// <summary>
         /// Creates a new Account for the given Wallet.
@@ -30,16 +31,15 @@ namespace Cardano.Abstractions.Services
         /// <summary>
         /// Deletes an Account.
         /// </summary>
-        /// <param name="walletId"></param>
-        /// <param name="accountId"></param>
-        Task Delete(string walletId, string accountId);
+        /// <param name="context"></param>
+        Task Delete(AccountsContext context);
 
         /// <summary>
         /// Retrieves a specific Account.
         /// </summary>
         /// <param name="context">Context for retrieves</param>
         /// <returns>Acccount</returns>
-        Task<Response<Account>> Get(RetrievesContext context);
+        Task<Response<Account>> Get(AccountsContext context);
 
         /// <summary>
         /// Update an Account for the given Wallet.
@@ -55,13 +55,13 @@ namespace Cardano.Abstractions.Services
         /// </summary>
         /// <param name="context">Context for retrieves</param>
         /// <returns></returns>
-        Task<Response<List<WalletAddress>>> GetAddresses(RetrievesContext context);
+        Task<Response<List<WalletAddress>>> GetAddresses(AccountsContext context);
 
         /// <summary>
         /// Retrieve only account's balance.
         /// </summary>
         /// <param name="context">Context for retrieves</param>
         /// <returns></returns>
-        Task<Response<ulong>> GetBalance(RetrievesContext context);
+        Task<Response<ulong>> GetBalance(AccountsContext context);
     }
 }
