@@ -29,8 +29,8 @@ namespace Cardano.Abstractions.Services
         /// Redeem a certificate
         /// </summary>
         /// <returns></returns>
-        Task<Response<Transaction>> RedeemCertificate();
-        
+        Task<Response<Transaction>> RedeemCertificate(RedeemRequest body);
+
         /// <summary>
         /// Estimate the fees which would originate from the payment.
         /// </summary>
