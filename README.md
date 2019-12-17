@@ -8,6 +8,8 @@ Unofficial library for using Cardano platform in .NET projects.
 - [Cardano.Entities](https://www.nuget.org/packages/Cardano.Entities/ "Cardano.Entities")
 - [Cardano.Utils](https://www.nuget.org/packages/Cardano.Utils/ "Cardano.Utils")
 
+Also, you can using packages from github: [packages](https://github.com/tugolukov/Cardano/packages "packages").
+
 ## Example using in ASP.NET Core apps
 Add to ConfigureServices method:
 ```csharp
