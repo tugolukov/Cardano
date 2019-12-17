@@ -39,7 +39,7 @@ var result = await accountsService.GetAll(new AccountsContext()
 });
 ```
 
-Instead `AccountService` you can use other services:
+Instead of `AccountService` you can use other services:
 - `AddressesService`
 - `InformationsService`
 - `InternalService`
@@ -58,7 +58,7 @@ This project contains implemetation of all interfaces. If you want use full func
 This project contains all models that are used in **Cardano.Core**.
 
 **4. Cardano.Utils**
-This project contsins additional functionallity for HttpClient and models for Response.
+This project contains additional functionallity for HttpClient and models for Response.
 
 ## Official Cardano Documentation
 API: https://cardanodocs.com/technical/wallet/api/v1/
