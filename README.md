@@ -48,18 +48,18 @@ Instead of `AccountService` you can use other services:
 - `WalletsService`
 
 ## Service description
-**1. Cardano.Abstractions**
+- **Cardano.Abstractions**
 This project contains interfaces, the implementation of which you can develop youself, and models of contexts for interfaces.
 
-**2. Cardano.Core**
+- **Cardano.Core**
 This project contains implemetation of all interfaces. If you want use full functionallity, you need this project.
 
-**3. Cardano.Entities**
+- **Cardano.Entities**
 This project contains all models that are used in **Cardano.Core**.
 
-**4. Cardano.Utils**
+- **Cardano.Utils**
 This project contains additional functionallity for HttpClient and models for Response.
 
 ## Official Cardano Documentation
-API: https://cardanodocs.com/technical/wallet/api/v1/
-Cardano: https://www.cardano.org/en/home/
+- API: https://cardanodocs.com/technical/wallet/api/v1/
+- Cardano: https://www.cardano.org/en/home/
