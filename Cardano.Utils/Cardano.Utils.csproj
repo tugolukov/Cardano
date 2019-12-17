@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <Version>1.0.0</Version>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <RepositoryUrl>https://github.com/tugolukov/Cardano</RepositoryUrl>
+        <Title>Cardano.Utils</Title>
+        <Authors>tugolukov</Authors>
+        <Description>This project contsins additional functionallity for HttpClient and models for Response.</Description>
+        <PackageIconUrl>https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-32.png</PackageIconUrl>
     </PropertyGroup>
 
     <ItemGroup>

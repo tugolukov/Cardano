@@ -2,6 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <Version>1.0.0</Version>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <RepositoryUrl>https://github.com/tugolukov/Cardano</RepositoryUrl>
+        <Title>Cardano.Entities</Title>
+        <Authors>tugolukov</Authors>
+        <Description>This project contains all models that are used in Cardano.Core.</Description>
+        <PackageIconUrl>https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-32.png</PackageIconUrl>
     </PropertyGroup>
 
 </Project>
