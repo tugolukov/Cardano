@@ -45,7 +45,7 @@ Instead `AccountService` you can use other services:
 **1. Cardano.Abstractions**
 This project contains interfaces, the implementation of which you can develop youself, and models of contexts for interfaces.
 
-** 2. Cardano.Core**
+**2. Cardano.Core**
 This project contains implemetation of all interfaces. If you want use full functionallity, you need this project.
 
 **3. Cardano.Entities**
